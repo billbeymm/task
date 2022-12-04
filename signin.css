@@ -1,0 +1,124 @@
+body {
+    background: linear-gradient(180deg, #506ED9 0%, #7AD8D2 100%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mulish', sans-serif;
+}
+
+main {
+    width: 612px;
+    height: 913px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 56px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+input {
+    width: 477px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #EEEEEE;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+input:focus {
+    outline: 1px solid #45BDB6;
+}
+
+select {
+    width: 477px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #EEEEEE;
+    margin-bottom: 30px;
+    background-image: url(/arrow.svg);
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) 50%;
+}
+select:focus {
+    outline: 1px solid #45BDB6;
+}
+.field {
+    display: flex;
+}
+label {
+    display: flex;
+}
+fieldset {
+    width: 477px;
+    height: 75px;
+    border: none;
+    padding: 31px;
+}
+.real-checkbox {
+    /* display: none; */
+    position: absolute;
+    opacity: 0;
+}
+.fake-checkbox {
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    border: none;
+    background-color: #EEEEEE;
+    margin-right: 25px;
+}
+.label-text {
+    width: 412px;
+    height: 75px;
+    font-size: 20px;
+    font-style: italic;
+}
+.real-checkbox:checked ~ label .fake-checkbox {
+    background-image: url(/checbox.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 13px;
+}
+
+
+.signin {
+    width: 477px;
+    height: 60px;
+    background-color: #45BDB6;
+    font-weight: 700;
+    color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 25.1px;
+}
+.link {
+    font-weight: 400;
+    margin-top: 66px;
+    font-size: 20px;
+}
+a {
+    font-weight: 700;
+    font-size: 20px;
+    color: #506ED9;
+}
